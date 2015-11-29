@@ -1,0 +1,8 @@
+<!-- //google maps stuff -->
+<h1>yo, this will be a map</h1>
+  <div ng-app="map" ng-controller="MapController">
+      <div id="map"></div>
+      <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+           <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+      </div>
+  </div>

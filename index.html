@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDmJEe_u5IqL7Di-5Xg117XWx71tHheAzk'></script>
+
     <title>INDIA MAP</title>
   </head>
-  <body ng-app="eNip">
+  <body ng-app="map">
 
 <ng-view></ng-view>
 
@@ -15,12 +17,14 @@
     <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
 
     <script src="common/common.module.js" charset="utf-8"></script>
-    <script src="common/common.controllers.js" charset="utf-8"></script>
+    <script src="common/common.controller.js" charset="utf-8"></script>
     <script src="common/common.services.js" charset="utf-8"></script>
 
     <script src="map/map.module.js" charset="utf-8"></script>
-    <script src="map/map.controllers.js" charset="utf-8"></script>
-    <script src="map/map.services.js" charset="utf-8"></script>
+    <script src="map/map.controller.js" charset="utf-8"></script>
+    <script src="map/map.service.js" charset="utf-8"></script>
+
+    <script src="map/views/data.js" charset="utf-8"></script>
   </body>
 
 </html>

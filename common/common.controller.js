@@ -3,7 +3,7 @@
 
   angular
     .module('common')
-    .controller('MainController', function ($scope) {
+    .controller('CommonController', function ($scope) {
 
     });
 

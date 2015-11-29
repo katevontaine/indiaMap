@@ -2,7 +2,7 @@
   "use strict";
 
   angular
-    .module('flickrgram', [
+    .module('common', [
       'ngRoute',
       'underscore',
       'map'
@@ -12,7 +12,7 @@
       $routeProvider
         .when('/', {
           template: '<h1>This is my map of India.</h1>',
-          controller: 'MainController'
+          controller: 'CommonController'
         })
         .when('/404', {
           template: '<h1> Sorry, this is not a map!</h1>'
