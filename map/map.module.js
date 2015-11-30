@@ -4,14 +4,12 @@
   angular
     .module('map', [
       'ngRoute',
-      'underscore',
-      'map'
-
+      'uiGmapgoogle-maps'
     ])
     .config(function ($routeProvider) {
       $routeProvider
         .when('/', {
-          template: '<h1>This is my map of India.</h1>',
+          templateUrl: 'map/views/map.html',
           controller: 'MapController'
         })
         .when('/404', {
@@ -22,17 +20,6 @@
           controller: 'MapController'
         })
         .otherwise({ redirectTo: '/404'});
-    });
-
-  angular
-    .module('underscore', [])
-    .factory('_', function ($window) {
-      return $window._;
-    });
-  angular
-    .module('map', [])
-    .factory('map', function ($window) {
-      return $window.moment;
     });
 
 })();
